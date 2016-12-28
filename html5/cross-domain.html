@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Test Cross-domain communication using HTML5</title>
+<script type="text/javascript">
+	function sendIt(){
+		document.getElementById("otherPage").contentWindow.postMessage(document.getElementById("message").value, 
+				"http://child.com:8020");
+	}
+</script>
+</head>
+<body>
+	<iframe src="http://child.com:8020/html5/other-domain.html" id="otherPage"></iframe>
+	<br/><br/>
+	<input type="email" id="message"  /><input type="button" value="Send to child.com" onclick="sendIt()" />
+</body>
+</html>

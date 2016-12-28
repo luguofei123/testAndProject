@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>圆角,背景图</title>
+	</head>
+	<style type="text/css">
+		.divbox{width:100px;height:100px;border:1px solid black;
+		border-radius:10px 20px 15px 10px;box-shadow: 10px 10px 12px 1px #888888 ;
+	
+		transtion:width 4s,height 4s,transform 4s;
+		-webkit-transition: width 4s,height 4s,-webkit-transform 1s;
+		}
+		
+		.divbox:hover{
+			
+			-webkit-transform:translate(20px,20px);
+		}
+	    .divbox1{
+	    background-image:url(img/img_flwr.gif),url(img/paper.gif);
+	    background-position: right bottom, left top; 
+	    background-repeat: no-repeat, repeat; 
+	    }
+	    .divbox2{
+	    	width: 300px;height: 300px;
+	    	background: url(img/img_flwr.gif) center no-repeat;
+	    	background-size: 100% 100% ;
+	    	background-origin:content-box;
+	    }
+	</style>
+	<body>
+		
+		<div class="divbox">人民共和国</div>
+		
+		<div class="divbox1">
+			<h1>Lorem Ipsum Dolor</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div class="divbox2"></div>
+	</body>
+</html>

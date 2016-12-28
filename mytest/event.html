@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>event事件</title>
+	</head>
+	<body>
+		
+		<script>
+		   function mylaa(){
+		   	alert(document.usefo.usename.value) 
+		   }
+		   
+		 //var   entry="[]"; //alert(entry)
+		   entry = eval('(' + '{}' + ')');
+			//alert(entry);
+		</script>
+		<form action="" method="post" name="usefo">
+			<input type="text" id="username" name="usename"/>
+			<input type="submit" value="" onclick="mylaa()"/>
+		</form>
+		
+		<ul id="ul"> <li id="li-1">1</li>
+			         <li id="li-2">2</li>
+			         <li id="li-3">3</li>
+			         <li id="li-4">4</li>
+			         <li id="li-5">5</li>
+		</ul>
+		
+		<input id="myButton" type="button" value="anniu" />
+<script type="text/javascript"> 
+//本例子只在外面盒子定义了处理方法，而这个方法一样可以捕获到子元素点击行为并处理它。假设有成千上万子元素要处理，难道我们要为每个元素加“onclick="eventHandle(event)"”？显然没有这种集中处理的方法来的简单，同时它的性能也是更高的。 
+
+document.getElementById("ul").onclick=function(e) {
+	//alert("fd");
+	if(e.target && e.target.nodeName == "LI") {
+		console.log("List item "+e.target.id.replace("post-")+" was clicked!");
+	}
+	
+};
+       
+(function() {
+
+                            var clickCount = 0;
+
+document.getElementById('myButton').onclick = function() {
+
+        clickCount += 1;
+
+        alert("clicked " + clickCount + " times.");
+
+}
+
+                   }());
+                   
+                   alert(clickCount);
+
+</script>
+	</body>
+</html>
+

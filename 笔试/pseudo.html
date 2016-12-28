@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>各种伪元素做成的按钮效果</title>
+	</head>
+	<style>
+	
+	ul li{list-style-type: none;}
+		a{width: 100px;height: 30px;border: 1px solid #dedede;display: inline-block; position: relative;overflow: hidden;}
+				
+		a::before{content: '';position: absolute;top: 0;left: 0;width: 0px;height: 0px;
+		            border-style: solid;border-color: #6b4432 transparent transparent transparent; border-width: 0px 0px 0px 0px;
+		           -webkit-transform:rotate(0deg) ;
+		           -webkit-transition: 1s;transition: 1s;z-index: 1;}
+		a:hover::before{border-width: 200px 200px 0px 0px;}
+	</style>
+	<body>
+		
+		<div>
+			<ul>
+				<li><a href=""></a></li>
+			</ul>
+		</div>
+	</body>
+</html>

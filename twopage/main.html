@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>主页页面</title>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/test.js" ></script>
+	</head>
+	<style>
+		.test{color: red;}
+	</style>
+	<body>
+<%= (name ? name : "<i>无ttt名</i>") %>
+		<a href="myframe.html?sss=1">open 1 page</a>
+		<a href="myframe.html?sss=2">open 2 page</a>
+		<a href="myframe.html?sss=3">open 3 page</a>
+		<a href="myframe.html?sss=4">open 4 page</a>  </br>
+<button>Change colors</button> </br>
+<span></span> 
+<div>1</div> 
+<div>2</div>
+
+<div>3</div> 
+<div>4</div>
+<div id="stop">Stop here</div> 
+<div>5</div>
+
+<div>6</div>
+<div>7</div>
+     
+             <script>
+            $("button").click(function () { 
+$("div").each(function (index, domEle) { 
+  // domEle == this 
+  $(domEle).css("backgroundColor", "yellow");  
+  if ($(this).is("#stop")) { 
+  $("span").text("Stopped at div index #" + index); 
+  return false; 
+  } 
+});
+});
+             </script>
+	</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>canvas</title>
+	</head>
+	<body>
+		<canvas id="mycanvas" width="300" height="300"></canvas>
+		
+		<script type="text/javascript">
+		
+		
+		    function drawtree(context){
+		    	context.beginPath();
+				context.moveTo(-25,-50);
+				context.lineTo(-10,-80);
+				context.lineTo(-20,-80);
+				context.lineTo(-5,-110);
+				context.lineTo(-15,-110);
+				context.lineTo(-0,-140);
+				
+				context.lineTo(15,-110);
+				context.lineTo(5,-110);
+				context.lineTo(20,-80);
+				context.lineTo(10,-80);
+				context.lineTo(25,-50);
+		
+				context.closePath();
+		    }
+			function drawMycanvas(){
+				
+				var canvas = document.getElementById("mycanvas");
+				var context = canvas.getContext('2d');
+				context.save();			
+				context.translate(130,250);				
+				drawtree(context);								
+				context.stroke();												
+			    context.restore();			    							
+				context.lineWidth = 4;
+				context.lineJoin = "round";
+				context.strokeStyle = "#663300";								
+				context.fillStyle = "#339900";				
+				context.fill();				
+				context.stroke();
+				
+			
+				
+			    context.fillStyle = "#663300";
+				context.fillRect(125,200,10,50);
+				
+				context.save();
+				context.translate(-10,350);
+				context.beginPath();
+				context.moveTo(0,0);
+				context.quadraticCurveTo(170,-50,260,-190);
+				
+				context.quadraticCurveTo(310,-250,410,-250);
+				context.strokeStyle = "#663300";
+				context.lineWidth = 20;
+				context.stroke();
+				context.restore();
+				
+				
+				
+				context.drawImage(bark,125,200,10,50);
+				
+				
+				context.save();
+				context.translate(251,300);
+				context.scale(2,2)
+				drawtree(context);
+				context.stroke()
+				context.restore();
+			}
+			var bark = new Image();
+				bark.src = "img/bark.png";
+				bark.onload = function(){
+					drawMycanvas();
+				}
+			
+			window.addEventListener("load",drawMycanvas,true);
+			
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

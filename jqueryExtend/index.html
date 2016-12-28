@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		 <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	</head>
+	<body>
+	<script>
+//扩展jQuery对象本身
+jQuery.extend({
+  "minValue": function (a, b) {
+    ///<summary>
+    /// 比较两个值，返回最小值
+    ///</summary>
+    return a < b ? a : b;
+  },
+  "maxValue": function (a, b) {
+    ///<summary>
+    /// 比较两个值，返回最大值
+    ///</summary>
+    return a > b ? a : b;
+  }
+});
+//调用
+var i = 100; j = 101;
+var min_v = $.minValue(i, j); // min_v 等于 100
+var max_v = $.maxValue(i, j); // max_v 等于 101
+//alert(max_v);
+
+//2
+var settings = { validate: false, limit: 5, name: "foo" };
+var options = { validate: true, name: "bar" };
+jQuery.extend(settings, options);
+
+//alert(jQuery.fn === jQuery.prototype);
+
+
+//闭包限定命名空间
+(function ($) {
+  $.fn.extend({
+    "highLight": function (options) {
+      var opts = $.extend({}, defaluts, options); //使用jQuery.extend 覆盖插件默认参数
+    return  this.each(function () { //这里的this 就是 jQuery对象
+        //遍历所有的要高亮的dom,当调用 highLight()插件的是一个集合的时候。
+        var $this = $(this); //获取当前dom 的 jQuery对象，这里的this是当前循环的dom
+        //根据参数来设置 dom的样式
+        $this.css({
+          backgroundColor: opts.background,
+          color: opts.foreground
+        });
+        
+        //格式化高亮文本
+        var markup = $this.html();
+        markup = $.fn.highLight.format(markup);
+        $this.html(markup);
+      });
+    }
+  });
+  
+  
+  
+  //默认参数
+  var defaluts = {
+    foreground: 'red',
+    background: 'yellow'
+  };
+  
+  
+   //公共的格式化 方法. 默认是加粗，用户可以通过覆盖该方法达到不同的格式化效果。
+  $.fn.highLight.format = function (str) {
+    return "<b>" + str + "</b>";
+  }
+})(window.jQuery);
+
+
+
+jQuery.extend({
+Meg: function (message) {
+alert(message);
+},
+MegToo: function (messageToo) {
+alert(messageToo);
+}
+});
+
+jQuery.fn.extend({
+ShowHtml: function (showhtml) {
+jQuery(this).html(showhtml);
+}
+});
+
+
+$(function () {
+  $("div").highLight(); //调用自定义 高亮插件
+  
+  //$.Meg("Hi,Stone"); 
+  //$.MegToo("niubi");
+  
+  jQuery("#htmlDiv").ShowHtml("Stone,Hi!"); 
+});
+
+var a = {
+name : "blue",
+pass : 123
+}
+var b = {
+name : "red",
+pass : 456,
+age : 1
+}
+var c = jQuery.extend({},b,a); 
+alert(c.name);
+	</script>
+	
+	
+	<div>1212</div>
+	<div id="htmlDiv">
+		省着
+	</div>
+	</body>
+</html>

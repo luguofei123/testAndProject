@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		 <script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/lib/underscore.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/lib/backbone.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/lib/backbone-localstorage.js" type="text/javascript" charset="utf-8"></script>
+
+  <link href="http://cdn.bootcss.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body>
+		 <button id="addpeople">Add Friend</button>
+    <ul id="peopleslist">
+    </ul>
+		
+	</body>
+	<script>
+		(function($){
+             var AppRouter = Backbone.Router.extend({
+      routes: {
+        "index" : "index",
+        "task/:id": "task",
+        "*acts": "tasklist"
+      },
+      index: function() {
+        alert("index");
+      },
+      tasklist: function(action) {
+        alert(action);
+      },
+      task: function(id) {
+        alert(id);
+      }
+    });
+ 
+    var app = new AppRouter;
+    Backbone.history.start();
+			
+			//创建单个联系人模板
+			var People = Backbone.Model.extend({
+	
+      
+				
+			});
+			
+			//创建联系人集合模板
+			var Peoples = Backbone.Collection.extend({
+				initialize:function(models,options){
+					this.bind("add",options.view.addPeopleLi)
+				}
+								
+			})
+			
+			//建立视图对象
+			var AppView = Backbone.View.extend({
+				el:$("body"),
+				initialize:function(){
+					this.peoples = new Peoples("",{view:this});
+				},
+				events:{
+					"click #addpeople":"shouprompt",
+				},
+				shouprompt:function(){
+					var people_name = prompt("请输入姓名");
+					var people_model = new People({name:people_name});
+					this.peoples.add(people_model);
+				},
+				addPeopleLi:function(model){
+					$("body").append("<li>" + model.get('name') + "</li>");
+				}
+				
+			})
+			   var appview = new AppView   //实例化视图
+		})(jQuery)
+		
+	</script>
+</html>

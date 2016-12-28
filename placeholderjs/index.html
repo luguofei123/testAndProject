@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>占位js</title>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.placeholder.min.js" ></script>
+	     <script type="text/javascript">
+      $(function() {
+        $('input, textarea').placeholder();
+        var abc = "                  eeee  ";
+        //alert(abc.trim().length);
+       function isLeapYear(year) {  return (year % 4 == 0) && (year % 100 != 0 || year % 400 == 0);  }//判断是不是闰年
+      
+              // alert(isLeapYear(2100));
+              var dd= new Date();
+           var zz=   dd.setDate(dd.getDate()-100)     
+              var yy = dd.getFullYear();  
+              alert(yy);
+      
+      });
+    </script>
+    <style type="text/css">
+      input, textarea { font-family: Helvetica, Arial; color: #000;}
+      .placeholder {color: #aaa;}
+    </style>
+	</head>
+	<body>
+		
+		<center style="margin-top: 10%"><font style="font-size: 18pt; font-weight: bold;font-weight: bold; color: red;">借助jquery placeholder实现HTML5中placeholder特效</font></center><br><br>
+        <input type="text" id="userName" name="userName" placeholder="请输入username…" style="margin-bottom: 12px;"><br>
+        <input type="password" id="password" name="password" placeholder="请输入密码…" style="margin-bottom: 12px;"><br>
+        <textarea id="personalInformation" name="personalInformation" rows="3" cols="50" maxlength="200" placeholder="请输入个人信息…"></textarea>
+		
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI 拖动（Draggable） - 事件</title>
+  <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+  <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="jqueryui/style.css">
+</head>
+<body>
+	<div class="easyui-dialog" style="width:400px;height:200px"
+    data-options="title:'My Dialog',collapsible:true,iconCls:'icon-ok',onOpen:function(){}">
+        dialog content.
+</div>
+
+<input id="cc" style="width:200px" />
+<script>
+	$('#cc').combobox({
+	url:"",
+	required: true,
+	valueField: 'id',
+	textField: 'text'
+});
+</script>
+	
+ 
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">标题</h1>
+	</header>
+	<div class="mui-content">
+	    <ul class="mui-table-view" id="my_task_list">  
+            <li class="mui-table-view-cell">  
+                <div class="mui-slider-right mui-disabled">  
+                    <a class="mui-btn mui-btn-red">删除</a>  
+                </div>  
+                <div class="mui-slider-handle">  
+                    待办事项1  
+                </div>  
+            </li>  
+            <li class="mui-table-view-cell">  
+                <div class="mui-slider-right mui-disabled">  
+                    <a class="mui-btn mui-btn-red">删除</a>  
+                </div>  
+                <div class="mui-slider-handle">  
+                    待办事项2  
+                </div>  
+            </li>  
+        </ul>  
+	</div>
+	<div>
+		<select>
+			<option>111</option>
+			<option>222</option>
+			<option>333</option>
+		</select>
+	</div>
+	<script>
+		//选项选择器
+CharacterPickerWindow mOptions = new CharacterPickerWindow(activity);
+//初始化选项数据
+setPickerData(mOptions.getPickerView());
+//设置默认选中的三级项目
+mOptions.setSelectOptions(0, 0, 0);
+//监听确定选择按钮
+mOptions.setOnoptionsSelectListener(new CharacterPickerWindow.OnOptionsSelectListener() {
+    @Override
+    public void onOptionsSelect(int options1, int option2, int options3) {
+        // TODO 处理选择结果
+    }
+});
+mOptions.showAtLocation(v, Gravity.BOTTOM, 0, 0);
+	</script>
+</body>
+</html>

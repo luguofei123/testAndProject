@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>js正则表达式</title>
+	</head>
+	<body>
+		<script>
+			var str = "122111";
+			var patt1 = new RegExp("\\w","ig");
+			
+			var patt2 = /^\d{5,12}$/ig;
+			 document.write(str.match(patt1)+"<br/>");
+			 
+			 document.write(str.match(patt2));  
+			 username=[{"text":"记录查询","children":[{"text":"文件操作记录","url":"/hasession.php","checked":true,"state":"open"},
+                                        {"text":"移动盘拷贝记录","url":"/hsession.php","checked":true,"state":"open"},
+                                        {"text":"文件应用操作记录","url":"/aesession.php","state":"open"},
+                                        {"text":"文件外发记录","url":"/aesession_infraction.php","state":"open"},
+                                        {"text":"文件外发外拷审批","url":"/tsession.php","state":"open"},
+                                        {"text":"外发外拷审批记录","url":"/user_policy.php","state":"open"}
+                                        ], "state":"open"},
+
+         {"text":"文件配置","children":[{"text":"阻止外发外考记录","url":"/keyloggr.php","checked":true,"state":"open"},
+                                        {"text":"文件外发外拷配置","url":"/keyloggerrule.php","checked":true,"state":"open"},
+                                        {"text":"审批员设定","url":"/keylogger_rule_user.php","state":"open"}
+                                        ],"state":"open"},
+        {"text":"文件报表","children":[{"text":"账号文件外发外拷报表","url":"/database_activity1.php","checked":true,"state":"open"},
+                                       {"text":"应用操作文件报表","url":"/database_infraction.php","checked":true,"state":"open"}
+                                      ],"state":"open"}
+
+        ]
+			
+			var xiaoming=[{name:"xiaoming",telephone:"123"}]
+			function myObj(){
+				var xiaohua = xiaoming;
+				xiaohua[0].name="jim";
+				return xiaohua;
+				
+			}
+			
+			var tt = myObj();
+			//alert(Object.prototype.toString.call(username)); //可以判断是不是数组
+			//alert(tt[0].name);
+			var a = '{"name":"1234"}';
+            var c = '{"nimabi":[{"name":"张三","age":18},{"name":"李四","age":19}]}';
+            
+            var f = JSON.parse(a);//这样写正确
+            var t = JSON.parse(c);//json数组的时候提示语法错误
+            
+            alert(t.nimabi[0].name);
+            var str = '{"a":"1ddddddddd"}';
+            
+            //eval('('+str+')'); 
+             var str_json = JSON.parse(str); //alert(str_json.a);
+            //document.write(f.name)
+            
+		</script>
+	</body>
+</html>

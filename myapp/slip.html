@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/ionic-citypicker/dist/ionic-citypicker.min.js"></script>
+		
+	</head>
+	<body>
+		
+		<ionic-city-picker options='vm.CityPickData1'></ionic-city-picker>
+<ionic-city-picker options='vm.CityPickData2'></ionic-city-picker>
+<ionic-city-picker options='vm.CityPickData3'></ionic-city-picker>
+<ionic-city-picker options='vm.CityPickData4'></ionic-city-picker>
+<div class="button button-positive button-block" ng-click="vm.change()">
+  修改城市
+</div>
+<div class="button button-positive button-block" ng-click="vm.sync()">
+  同步{{vm.CityPickData2.areaData}}
+</div>
+	</body>
+</html>

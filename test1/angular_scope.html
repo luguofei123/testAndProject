@@ -1,0 +1,54 @@
+<html>
+   
+   <head>
+      <meta charset="utf-8">
+      <title>AngularJS  依赖注入</title>
+     
+   </head>
+   
+   <body>
+   	         <div ng-app="myApp" ng-init="someProperty='some date'">
+   	         	 <div ng-init="siblingProperty='moredata'">
+   	         		    inside div two:{{aThirdProperty}}
+   	         		<div ng-init="aThirdProperty='data for 3rd property'" ng-controller="someController">
+   	         		     inside div three:{{aThirdProperty}}
+   	         		    <div ng-init="aFourthProperty" ng-controller="secondController">
+   	         		 	inside div four:{{aThirdProperty}}
+   	         		 	
+   	         		 	</br>
+   	         		 	outside mydirective:{{myProperty}}
+   	         		 	<div my-directive ng-init="myProperty='wow,this is cool'">
+   	         		 		
+   	         		 		inside mydirective:{{myProperty}}
+   	         		 	</div>
+   	         		    </div>
+   	         		</div>
+   	         	</div>
+   	         </div>
+ 
+ <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+ <script>
+      
+      var app = angular.module('myApp',[]);
+            app.controller('someController',function($scope){
+      	
+      	            
+      })
+            
+            app.controller('secondController',function($scope){
+      	
+      	            
+      })
+           app.directive('myDirective',function(){
+           	
+           	return {
+           		
+           		restrict:'A',
+           		scope:true
+           	};
+           })
+
+      </script>
+      
+   </body>
+</html>

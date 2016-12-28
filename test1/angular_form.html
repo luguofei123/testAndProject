@@ -1,0 +1,39 @@
+<html>
+   
+   <head>
+      <meta charset="utf-8">
+      <title>AngularJS  依赖注入</title>
+     
+   </head>
+   
+   <body ng-app>
+      <form name="signup_form" method="post">
+      	<fieldset>
+      		<legend>Signup</legend>
+      		<div>姓名：<input name="username" type="text"/></div>
+      		<div>密码：<input name="userpass" type="text"/></div>
+      		<button id="buttonSubmit" type="button" class="button radius">submit</button>
+      	</fieldset>
+      </form>
+
+      <script src="js/jquery.js"></script>
+      <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+      
+      <script>
+      
+       var dataText = {username:$("input[name='username']").val(),userpass:$("input[name='userpass']").val()}
+              $("#buttonSubmit").click(function(){ 
+              	
+              	$.ajax({
+              		type:"post",
+              		url:"data.php",
+              		async:false,
+              		dataType:"json",
+              		data:dataText,
+              	}); 
+              })
+             
+      </script>
+      
+   </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单</title>
+	</head>
+	<style>
+    html{
+    	font-family: "微软雅黑";font-size: 12px;
+    }
+    table{text-align: center;vertical-align: middle;border-collapse: collapse;}
+	table th,td{border-style: solid;
+	           border-color: #666666;
+	           border-width: 1px;}
+       
+	#color_wap{
+			display: inline-block;
+			position: relative;
+			
+			width: 200px;
+			height: 18px;
+			background-color: black;
+			opacity: 1;
+		}
+	#color_wap:after{
+		content: '.';
+	}
+		#color1{
+			display: inline-block;
+			position: absolute;
+		    left: 0px;
+			width: 150px;
+			height: 18px;
+			background-color: red;
+			opacity: 1;
+		}
+		#color2{
+			display: inline-block;
+			position: absolute;
+			left: 0px;
+			width: 100px;
+			height: 18px;
+			background-color: yellow;
+			opacity: 1;
+		}
+		#color3{
+			display: inline-block;
+			position: absolute;
+			left: 0px;
+			width: 50px;
+			height: 18px;
+			background-color: green;
+			opacity: 1;
+		}
+		
+		
+	</style>
+	<body>
+		<table>
+			<tr><th>名称</th><th>颜色条</th><th>属性1</th></tr>
+			<tr>
+				<td>名称1</td>
+				<td><div id="color_wap">
+				              <span id="color1"><span id="color2"><span id="color3"></span></span></span>
+				                                      
+				                                      
+			                     </div>
+			                 </td>
+			    <td>属性1</td>
+			</tr>
+		
+		</table>
+	</body>
+</html>

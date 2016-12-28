@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>backbone实验</title>
+	</head>
+  <script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/lib/underscore.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/lib/backbone.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/lib/backbone-localstorage.js" type="text/javascript" charset="utf-8"></script>
+
+  <link href="http://cdn.bootcss.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+   <script type="text/javascript">
+        $(function() {
+                // 定义模型类  
+               Test = Backbone.Model.extend({
+                        defaults: {
+                                content: ""
+                        }
+                });
+                // 创建集合模型类  
+               TestList = Backbone.Collection.extend({
+                        model: Test
+                });
+                // 向模型添加数据  
+                var data = new TestList({
+                        content: "hello,bac22kbone!"
+                });
+                // 创建View对象  
+                TestView = Backbone.View.extend({
+                        el: $("body"),
+                        initialize: function() {
+                                $("#divTip").html(data.models[0].get("content"));
+                        }
+                });
+                //实例化View对象  
+               App = new TestView;
+        });
+        </script>
+    </head>
+
+    <body>
+        <div id="divTip"></div>
+  </body>
+</html>

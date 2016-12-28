@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>111</title>
+		
+		
+	</head>
+	
+
+
+<style>
+#demo {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  position: relative;
+  border: 4px solid #333;
+}
+
+#demo:after, #demo:before {
+  border: solid transparent;
+  content: ' ';
+  height: 0;
+  left: 100%;
+  position: absolute;
+  width: 0;
+}
+
+#demo:after {
+  border-width: 9px;
+  border-left-color: #ccc;
+  top: 15px;
+}
+
+#demo:before {
+  
+  
+  border-width: 14px;
+  border-left-color: red;
+  top: 10px;
+}
+
+.line{
+	width: 10px;
+	height: 0px;
+	border: 2px solid red;
+	
+	transition: width 2s ease 3s;
+    -moz-transition: width 2s ease 3s;	
+    -webkit-transition: width 2s ease 3s;	
+    -o-transition: width 2s ease;
+    position: relative;
+
+}
+
+.line:before{
+	border: 8px solid transparent ;
+	border-left: 10px solid red;
+	content: '';
+	position: absolute;
+	right: -15px;
+	top:-8px
+	
+}
+
+.line:hover{
+	width: 300px;
+	
+}
+</style>
+	<body>
+		
+		<div id="demo">1111</div>
+		
+		<div id="hexagon">
+			uuuuu
+		</div>
+		
+		
+		<div class="line">
+			1111
+		</div>
+	</body>
+</html>

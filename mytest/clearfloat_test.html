@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>CSS清除浮动的三种方法</title>
+	</head>
+	<style type="text/css">
+		.box2{width: 200px;height: 200px;background-color: #dedede;float: left;}
+		.box3{width: 200px;height: 200px;background-color: darkolivegreen;float: right;}
+		.clear{clear:both; height: 0; line-height: 0; font-size: 0}/* 方法一：在浮动元素后面添加新的元素 、应用 clear：both；*/
+	    .over-flow{overflow: auto; zoom: 1; }/* //方法二：在父元素添加overflow: auto；zoom: 1; zoom是在处理兼容性问题*/
+	    
+	    .clearfix {zoom:1;}    /*==for IE6/7 Maxthon2==*/
+        .clearfix:after {clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}   /*==for FF/chrome/opera/IE8==*/
+       /*方法三：通过伪元素after来清除浮动其原理：这种方法清除浮动是现在网上最拉风的一种清除浮动，他就是利用:after和:before来在元素内部插入两个元素块，
+        * 从面达到清除浮动的效果。其实现原理类似于clear:both方法，只是区别在于:clear在html插入一个div.clear标签，而outer利用其伪类clear:after在元素
+        * 内部增加一个类似于div.clear的效果。 其中clear:both;指清除所有浮动；content: '.'; display:block;对于FF/chrome/opera/IE8不能缺少，其中content（）可以取值也可以为空。visibility:hidden;的作用是允许浏览器渲染它，但是不显示出来，这样才能实现清楚浮动。*/
+	</style>
+	<body>
+		<div class="clearfix">
+			<div class="box2">
+				
+			</div>
+			<div class="box3">
+				
+			</div>
+			
+			<!--<div class="clear">
+				
+			</div>-->
+		</div>
+	</body>
+</html>

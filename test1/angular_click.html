@@ -1,0 +1,40 @@
+<html>
+   
+   <head>
+      <meta charset="utf-8">
+      <title>AngularJS  依赖注入</title>
+     
+   </head>
+   
+   <body ng-app="myApp">
+      <div ng-controller="MyController">
+    <input ng-model="to"  type="email" placeholder="Recipient" />
+    <textarea ng-model="emailBody"></textarea>
+    <pre >{{ previewText }}</pre>
+    
+    <p>{{123|currency}}</p>
+  </div>
+    
+      
+      <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+      
+      <script>
+      angular.module('myApp', []).controller('MyController', 
+    function($scope, $interpolate) {
+      $scope.to = 'ari@fullstack.io';
+      $scope.emailBody = 'Hello {{ to }},\n\nMy name is Ari too!';
+      // Set up a watch
+      $scope.$watch('emailBody', function(body) {
+        if (body) {
+          var template = $interpolate(body);
+          $scope.previewText = template({to: $scope.to});
+        }
+      });
+});
+               
+                 	
+                 	
+      </script>
+      
+   </body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>事件liu</title>
+	</head>
+	<script>
+	window.onload = function(){
+//		document.querySelector("#div1").onclick = function(){alert("div1")}
+//		
+//		document.querySelector("#div2").onclick = function(){
+//			var event = UtilEvent.getEvent(event);
+//			UtilEvent.preventDefault(event);
+//			event.stopPropagation();
+//			var target = UtilEvent.getTarget(event);
+//			//alert("a");
+//			alert(target);
+//			alert("div2")}
+//		
+//		document.querySelector("#a3").onclick = function(){
+//			var event = UtilEvent.getEvent(event);
+//			UtilEvent.preventDefault(event);
+//			event.stopPropagation();
+//			var target = UtilEvent.getTarget(event);
+//			alert("a");
+//			alert(target);
+//		
+//		}
+		
+		//document.getElementById("div1").onclick = function(){alert("div1")}
+		
+//		var div1 = document.getElementById("div1");
+//		var div2 = document.getElementById("div2");
+//		var a3 = document.getElementById("a3");
+//		
+//		var hander_div1 = function(){alert("div1")}
+//		var hander_div2 = function(){alert("div2")}
+//		var hander_a3 = function(){alert("a3")}
+		//默认是false，表示冒泡阶段处理事件程序
+		//div1.addEventListener('click',hander_div1);
+		//div2.addEventListener('click',hander_div2);
+		 // a3.addEventListener('click',hander_a3,true);
+		  
+		  //div1.removeEventListener('click',hander_div1);
+		  
+		  UtilEvent = {
+		  	addHandler:function(element,type,handler){
+		  		if(element.addEventListener){
+		  			element.addEventListener(type,handler);
+		  		}
+		  		else if(element.attachEvent){
+		  			element.attachEvent("on"+type,handler);
+		  		}
+		  		
+		  		else{
+		  			element["on"+type] = handler;
+		  		}
+		  	},		  			  	
+		  	getEvent:function(event){
+		  		return  event ? event : window.event;
+		  	},
+		  	
+		  	getTarget:function(event){
+		  		return event.target = event.target ||srcElement.target;
+		  	},
+		  	
+		  	preventDefault:function(){
+		  		if(event.preventDefault){
+		  			event.preventDefault();		  			
+		  		}
+		  		
+		  		else if(event.returnValue){
+		  			event.returnValue = false;
+		  		}
+		  	},
+		  	removeHandler:function(element,type,handler){
+		  		if(element.removeEventListener){
+		  			element.removeEventListener(type,handler);
+		  		}
+		  		
+		  		else if(element.detachEvent){
+		  			element.detachEvent("on"+type,handler);
+		  		}
+		  		else{
+		  			element["on"+type] = null;
+		  		}
+		  	},
+		  	
+		  	stopPropagation:function(){
+		  		if(event.stopPropagation){
+		  			event.stopPropagation();
+		  		}
+		  		else event.cancelBubble = true;
+		  	}
+		  	
+		  }
+		  var btn = document.getElementById("btn");
+	
+		  
+		  //btn.onclick = function(){alert("5555")}
+		  //btn.attachEvent("onclick",function(){alert("eeee")})
+		  //UtilEvent.addHandler(div1,"click",hander_div1);
+		 // UtilEvent.removeHandler(div1,"click",hander_div1);
+		var arr1=[1,3,4];
+        var arr2=[3,4,5];
+        
+       //arr4 = arr1.concat(arr2);
+      arr3 =   [].push.apply(arr1,arr2);
+      //alert(arr1.length);
+            // arr1.push(arr2);
+            //alert(arr1) ;
+            //console.log(arr1.length);
+                     //f1();
+
+	}
+//编写一个apply函数第一步 ；
+var arr=[5,7,9,1];
+function getMax2(arr){
+    return Math.max.apply(null,arr);
+}
+  //alert(getMax2(arr));
+function log(){
+	
+	//var args = Array.prototype.slice.call(arguments);//alert(args);
+	   // args.unshift("(app)");
+	console.log.apply(console,arguments);
+}
+	log('hello','world','woso','niubi');
+	
+	var func=function(x1,y,z){
+		myfunc.call(this,x1,y);
+		this.z = z;
+	
+	}
+    var myfunc=function(y,x1){
+   
+        this.x1=x1;
+        this.y=y;
+  
+    }
+    //myfunc.call(func,arguments);
+    
+   var fun1 = new func("22","ddd","zzz");
+   
+   alert(fun1.x1)
+	</script>
+	<body>
+		<div id="div1"  style="width: 200px;height: 200px;border: 1px solid red;">
+			<div id="div2"  style="width: 100px;height: 100px;border: 1px solid red;">
+				<button id ="btn">click</button>
+				<button id="btn1" onclick="f1()">anniu11</button>
+				<script></script>
+			</div>
+		</div>
+	</body>
+</html>

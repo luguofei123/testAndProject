@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+<button type="button" onclick="tt()">计数!</button>
+<p>局部变量计数。</p>
+<p id="demo">0</p>
+<script>
+
+
+ 
+//var aa = (function (){
+//	var co1 = 0;	
+//	return function(){co1 =co1 + 1;return co1;} ;
+//})()
+
+aa=function (){
+	var co1=0;
+	return function (){return co1=co1+1;}
+	 
+}
+
+var dd =aa();
+
+function tt(){
+	
+	document.getElementById("demo").innerHTML = dd();
+	
+}
+
+//var cd = function(){return function(){return 2}}
+
+//alert(cd()())
+
+
+</script>
+
+</body>
+</html>
