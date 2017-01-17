@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=640">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>app下载</title>
+  
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css"/>
+</head>
+	<body>	
+		<div class="content">
+			<img class="chosebrower img-responsive" src="img/chosebrower.png" width="80%"/>
+			<div class="logo">
+				<a href=""><img class="img-responsive" src="img/logo.jpg" width="138"/></a>
+			</div>
+			
+			<div class="textbox">
+				<p class="p1">iphone安装后可能无法打开</p>
+			    <p>打开方式-手机设置->通用->描述文件-></p>
+			    <p>选择beijingyiyangtianhe 企业证书点击-></p>
+                <p>点击信任即可打开。</p>
+			</div>
+			<div class="iphonedown">
+				<a href=""><img class="img-responsive" src="img/iPhone.png"/></a>
+			</div>
+			<div class="androiddown">
+				<a href=""><img class="img-responsive" src="img/android.png"/></a>
+			</div>
+			
+			
+			
+		</div>
+		<script type="text/javascript"> 
+window.onload = function(){ 
+if(isWeiXin()){ 
+var img= document.getElementsByTagName("img"); 
+img[0].style.display = "block";
+
+} 
+} 
+function isWeiXin(){ 
+var ua = window.navigator.userAgent.toLowerCase(); 
+if(ua.match(/MicroMessenger/i) == 'micromessenger'){ 
+return true; 
+}else{ 
+return false; 
+} 
+} 
+</script> 
+		
+	  <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+      <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/iscroll.js" ></script>
+      <script type="text/javascript" src="js/commen.js" ></script>	
+	</body>
+</html>

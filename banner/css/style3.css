@@ -1,0 +1,18 @@
+
+html { height:100%; font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 62.5%; }
+body { margin: 0; font-size: 1.4rem; line-height: 1.5; color: #333333; overflow-x: hidden; -webkit-overflow-scrolling: touch; }
+
+.mainbody{position: relative;width: 640px;}
+.content{z-index:999;}
+.bgbanner1{position:absolute;width:26.5%;top:60%;left: 20%;}
+.bgbanner2{position:absolute;width:26.5%;top:60%;left: 55%;}
+.bgbanner3{position:absolute;width:8%;top:65%;left: 47%;}
+
+
+
+
+
+
+
+
+

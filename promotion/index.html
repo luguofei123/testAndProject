@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>呱呱学车百度活动推广</title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;border: 0px;}
+			.button1{position: absolute;top:34.3%;left:27.5%}
+			.button2{position: absolute;top:34.3%;left:47%}
+			.button3{position: absolute;top:34.3%;left:66%}
+			.button4{position: absolute;top:44.3%;left:27.5%}
+			.button5{position: absolute;top:44.3%;left:47%}
+			.button6{position: absolute;top:44.3%;left:66%}
+			.left   {position: fixed;   top:20%;  left:2%}
+			.right  {position: fixed;   top:20%;  right: 2%;}
+			.qqmessage{position: absolute;top:30%;right:8%}
+			.tanchuang{position: fixed;top:15%;left: 25%;background-image: url(img/PC03.jpg);width: 700px;height: 500px;display: none;}
+		
+			form{margin-top: 150px;padding-top: 70px;padding-left:50px;font-family: "微软雅黑";font-size: 24px;}
+			input{outline: 1px solid #ccc;height: 40px;width: 400px;line-height: 40px;font-family: "微软雅黑";font-size: 24px;}
+			.textphone{margin-top: 10px;margin-bottom: 10px;}
+			button{background-color: rgb(224,66,87);width: 257px;height: 59px;color: white;font-family: "微软雅黑";font-size: 36px;margin-top:46px;margin-left:170px;}
+			span{color:red;}
+			.close{position: absolute;top:10px;right:10px;}
+			.okpage{}
+		</style>
+	</head>
+	<body>
+		<div style="position: relative;">
+			<div class="backg">
+				<img  src="img/PC02.jpg"   width="100%" />
+			</div>
+			<div class="button1">
+				<a href="javascript:void(0)" onclick="open_tanchuang();return false;"><img src="img/button.jpg" width="130px"/></a>
+			</div>
+			<div class="button2">
+				<a href="javascript:void(0)" onclick="open_tanchuang();return false;"><img src="img/button.jpg" width="130px"/></a>
+			</div>
+			<div class="button3">
+				<a href="javascript:void(0)" onclick="open_tanchuang();return false;"><img src="img/button.jpg" width="130px"/></a>
+			</div>
+			<div class="button4">
+				<a href="javascript:void(0)" onclick="open_tanchuang();return false;"><img src="img/button.jpg" width="130px"/></a>
+			</div>
+			<div class="button5">
+				<a href="javascript:void(0)" onclick="open_tanchuang();return false;"><img src="img/button.jpg" width="130px"/></a>
+			</div>
+			<div class="button6">
+				<a href="javascript:void(0)" onclick="open_tanchuang();return false;"><img src="img/button.jpg" width="130px"/></a>
+			</div>
+			<div class="left">
+				<img src="img/PCSCAN.png" width="150px"/>
+			</div>
+			<div class="right">
+				<div class="qq">
+					<img src="img/PCQQ.png" width="160px"/>
+					<div class="qqmessage">
+						<div>
+						    <a href="http://wpa.qq.com/msgrd?v=3&uin=2105882276&site=qq&menu=yes"><img src="img/PCQQ1.jpg" width="130px"/></a>
+					    </div>	
+					    <div>
+						   <a href="http://wpa.qq.com/msgrd?v=3&uin=2851848634&site=qq&menu=yes"><img src="img/PCQQ2.jpg" width="130px"/></a>
+					    </div>
+					    <div>
+						    <a href="http://wpa.qq.com/msgrd?v=3&uin=2105882276&site=qq&menu=yes"><img src="img/PCQQ3.jpg" width="130px"/></a>
+					    </div>
+					    <div>
+						    <a href="http://wpa.qq.com/msgrd?v=3&uin=2851848634&site=qq&menu=yes"><img src="img/PCQQ4.jpg" width="130px"/></a>
+					    </div>
+					    <div>
+						    <a href="http://wpa.qq.com/msgrd?v=3&uin=2105882276&site=qq&menu=yes"><img src="img/PCQQ5.jpg" width="130px"/></a>
+					    </div>
+					    <div>
+						    <a href="#"><img src="img/PCQQB.jpg" width="130px"/></a>
+					    </div>
+					</div>																																												
+				</div>
+			</div>
+			<div class="tanchuang">
+				<form action="" method="post">
+					<div class="">
+						<label><span>*</span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</label><input type="text" name="" />
+					</div>
+					<div class="textphone">
+						<label><span>*</span>手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机：</label><input type="text" name="" maxlength="11"/>
+					</div>
+					<div class="">
+						<label>&nbsp;&nbsp;团购人数：</label><input type="text" name=""/>
+					</div>					
+					<button type="submit">立即报名</button>
+				</form>
+				<div class="close">
+					<a href="javascript:void(0)" onclick="close_tanchuang();return false;"><img src="img/PCCLOSE.jpg" width="40px"/></a>
+				</div>
+				<div class="okpage">
+					<a href=""><img src="img/PC04.jpg" width="700px"/></a>
+				</div>
+			</div>
+			
+		</div>
+	
+		<script type="text/javascript">
+		    function close_tanchuang(){
+		    	var a=document.getElementsByClassName("tanchuang");
+		    	a[0].style.display="none"
+		    }
+		    function open_tanchuang(){
+		    	var a=document.getElementsByClassName("tanchuang");
+		    	a[0].style.opacity=""
+		    }
+				
+			
+		</script>
+	</body>
+</html>

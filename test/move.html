@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="message" >
+			ssssss
+		</div>
+		
+	  
+	
+		<script>	
+		
+
+//		         function moveMessage(){
+//				if(!document.getElementById) return false;
+//				if(!document.getElementById("message")) return false;
+//				var elm=document.getElementById("message");
+//				  			    
+//				//elm.style.position="relative";
+//				//elm.style.left="100px";
+//				//elm.style.top="100px";
+//				  var xpos=parseInt(elm.style.left);
+//				  var ypos=parseInt(elm.style.top);				
+//				//if(xpos==200){
+//					//clearTimeout(movement);
+//					//return true;
+//				//}
+//				//if(xpos<200){xpos=xpos+2;}
+//				//if(xpos>200){xpos--;}
+//				if(ypos<100){ypos++;}
+//				//if(ypos>100){ypos--;}
+//				//xpos++;
+//				elm.style.left=xpos+"px";
+//				elm.style.top=ypos+"px";
+//			
+////				  alert("xpos")	
+//           
+//			}
+	
+       function movement(){
+       	var elm=document.getElementById("message");
+       	elm.style.position="absolute";
+				    elm.style.top  = "250px";
+                    elm.style.left = "350px";	
+       	setInterval(function moveMessage(){
+				if(!document.getElementById) return false;
+				if(!document.getElementById("message")) return false;			
+				  			    
+				//elm.style.position="relative";
+				//elm.style.left="100px";
+				//elm.style.top="100px";
+				  var xpos=parseInt(elm.style.left);
+				  var ypos=parseInt(elm.style.top);				
+				//if(xpos==200){
+					//clearTimeout(movement);
+					//return true;
+				//}
+				if(xpos<200){xpos=xpos+2;}
+				if(xpos>200){xpos--;}
+				if(ypos<100){ypos++;}
+				if(ypos>100){ypos--;}
+				//xpos++;
+				elm.style.left=xpos+"px";
+				elm.style.top=ypos+"px";
+			
+//				  alert("xpos")	
+             
+			},50)
+       }
+		
+	
+	movement()
+	
+	
+	for(i=0;i<=10;i++) console.log(i);
+	for(i=0,j=10;i<=10;i++,j--) console.log(i*j);
+	for(var i in o) console.log(i);
+	
+		</script>
+	</body>
+</html>

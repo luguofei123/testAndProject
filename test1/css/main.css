@@ -1,0 +1,74 @@
+﻿body{background-image: url(../img/pc-logon.png); background-repeat: no-repeat;color: white;}
+
+form{background-color: white;padding:15px 56px 10px 60px;color: black;font-size: 13.34px;border-radius: 0 0 10px 10px;}
+
+#checkBox + label {
+    background-image: url(../img/pc-logon23.png);
+    background-repeat: no-repeat;
+}
+
+#checkBox:checked+label{
+    background-image: url(../img/pc-logon05.gif);
+    background-repeat: no-repeat;
+
+
+}
+#checkBox{
+    display: none;
+    visibility:hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*iphone5/5s*/
+@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){
+.container{max-width:500px;margin: 90px auto;}}
+
+/*iphone6*/
+@media (device-height:667px) and (-webkit-min-device-pixel-ratio:2){
+.container{max-width:500px;margin: 100px auto;}}
+
+/*iphone6 plus*/
+@media (device-height:736px) and (-webkit-min-device-pixel-ratio:2){
+.container{max-width:500px;margin: 150px auto;}}
+
+/*ipad横屏*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+.container{max-width:400px;margin: 150px auto;}}
+
+/*ipad竖屏*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+.container{max-width:400px;margin: 150px auto;}}@media screen and (max-width: 320px) {
+	.container{width:100%;margin: 10px 0px;}
+     form{background-color: white;padding:15px 5px 10px 5px;color: black;font-size: 13.4px;border-radius: 0 0 10px 10px;}
+
+} /*兼容平板*/
+@media \0screen\,screen\9{.container{max-width:400px;margin: 100px auto;}}
+@media screen and (max-width: 640px) {.container{max-width:400px;margin: 30px auto;}} /*兼容手机*/
+@media screen and (max-width: 768px) {.container{max-width:400px;margin: 100px auto;}}
+@media screen and (max-width: 1480px) {.container{max-width:450px;margin: 100px auto;}}
+
+
+
+
+
+
+
+
+
+
+

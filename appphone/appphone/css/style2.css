@@ -1,0 +1,22 @@
+
+html { height:100%; font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 62.5%; }
+body { margin: 0; font-size: 1.4rem; line-height: 1.5; color: #333333; overflow-x: hidden; -webkit-overflow-scrolling: touch; }
+
+
+.chosebrower{position: fixed;top:0;right:0;display:none;}
+.logo{width:12em;margin: 10em auto 10em;}
+.textbox{text-align: center;font-family: 华文细黑;font-size: 2em;margin-top: -4em;}
+.textbox .p1{color:rgb(172,0,20);margin-bottom: 1em;}
+.iphonedown{width: 32em;margin: 0 auto;margin-top: 3.4em;}
+.androiddown{width: 32em;margin: 0 auto;margin-top: 3.2em;}
+
+
+
+
+
+
+
+
+
+
+

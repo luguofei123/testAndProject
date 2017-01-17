@@ -1,0 +1,74 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+body{position: relative;background-color:rgb(50,153,169) ;}
+
+
+.content{background-color: rgb(50,153,169);width: 100%;height: 710px;margin-top: -5px;padding-top: 25px;}
+.banner1{width: 780px;margin: 0 auto;}
+.row_jiaxiao1{width: 250px;background-color: white;font-family: "微软雅黑";padding-bottom: 15px;}
+.row_jiaxiao1_text{margin-left: 10px;margin-top: 5px;margin-bottom: 10px;margin-right: 10px;}
+h1{font-weight: 900;font-size: 16px;}
+h1 span{color: rgb(226,66,87);}
+.p1 p{font-size: 14px;color:#7b7b7b;}
+.row_jiaxiao1_text p{margin-top: 15px;}
+.row_jiaxiao1_text p span{font-weight: 600;}
+.guangfang{color: black;font-size: 14px;}
+.row_jiaxiao1_text p .money{font-size: 24px;color: rgb(226,66,87);}
+.hongbao{display:inline-block;width:26px;background-color: rgb(226,66,87);color: white;text-align: center;margin-left: 30px;font-size: 6px;}
+.tuangou{display:inline-block;width:25px;background-color: rgb(226,66,87);color: white;text-align: center;margin-left: 5px;font-size: 6px;}
+
+.p2 p{font-size: 12px;color: rgb(226,66,87);font-weight: 600;padding-left: 10px;}
+.row_jiaxiao1 button{background-color: rgb(226,66,87);width: 130px;height:30px;line-height30px;color: white;font-family: "微软雅黑";font-weight:600;letter-spacing:5px;margin: 0px auto;display: block;padding-left: 10px;padding-right: 10px;box-shadow:3px 3px 0px #767777}
+.left{float: left;}
+..right{float: right;}
+.middle{margin-left: 15px;margin-right: 15px;}
+.row2{margin-top: 15px;}
+.wave{clear: both;}
+.wave img{margin-top: 40px;}
+.banner2{background-color:rgb(224,66,87); height: 1500px;margin-top: -10px;padding-bottom: 20px;}
+.banner2 img{margin: 0 auto;display: block;padding-top: 50px;}
+.coment{width: 780px; margin: 0 auto;}
+.xueyuan_text_all{width: 600px;margin-top: 20px;font-family: "微软雅黑";}
+.xueyuan_text_all h1{font-size: 20px;color: white;margin-left: 10px;margin-bottom: 5px;width: 590px;height: 31px;}
+.xueyuan_text{background-color: white;width: 680px;height: 80px;padding-bottom: 10px;border-radius: 10px;}
+.xueyuan_text p span{font-weight: 900;color: rgb(224,66,87);margin-left: 10px;margin-top: 10px;display: inline-block;margin-bottom: 10px;}
+.coment1{margin-left: 10px;color: #767777;}
+.footer{background-color: rgb(47,48,48);}
+.foot{width: 1200px;margin: 0 auto;margin-top: 16px;padding-top: 16px;}
+.qq_right{position: fixed;top:20%;right: 2%;}
+.qqmessage{position: absolute;top:125px;left: 15px;}
+.qqleft{position: fixed;top:20%;left: 2%;}
+
+/* 点击报名按钮，弹出学员信息填写的表单*/
+.tanchuang{position: fixed;top:15%;left: 25%;background-image: url(../images/act/PC03.jpg);width: 700px;height: 500px;display: none;border-radius: 10px;}		
+form{margin-top: 150px;padding-top: 70px;padding-left:50px;font-family: "微软雅黑";font-size: 24px;}
+input{outline: 1px solid #ccc;height: 40px;width: 400px;line-height: 40px;font-family: "微软雅黑";font-size: 24px;}
+.textphone{margin-top: 10px;margin-bottom: 10px;}
+.tanchuang button{background-color: rgb(224,66,87);width: 257px;height: 59px;color: white;font-family: "微软雅黑";font-size: 36px;margin-top:46px;margin-left:170px;box-shadow:3px 3px 0px #767777}
+span{color:red;}
+.close{position: absolute;top:10px;right:10px;}
+.close:hover{border: 2px solid rgb(50,153,169);}
+button:hover{background-color:green;}
+
+/* 学员信息填写完毕后提交信息后反馈的成功页面，现在的样式是隐藏*/
+.okpage{position:fixed ;top:15%;left: 25%;}
+.okpage img{border-radius: 10px;}
+.closebar{position: absolute;top:10px;right:15px;}
+.closebar:hover{border: 2px solid rgb(50,153,169);}
+
+
+
+

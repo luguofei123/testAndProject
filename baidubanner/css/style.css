@@ -1,0 +1,29 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td ,img{ margin:0; padding:0; }
+
+
+body{z-index: -100;background-image: url(../img/学车PC_01.png);background-repeat: no-repeat;background-position: center top;background-color: red;}
+
+
+.container{width: 1050px; margin: 600px auto 0;}
+.redbao{margin-bottom:20px;}
+
+.qqmesseger{width: 100px;height: 150px;position: fixed;top:50%;right: 0;z-index: 9999;}
+
+
+.jiaxiao{padding-left: 8px;}
+.jiaxiao_detail{margin-top: 22px;background-color:white;padding: 10px 17px 23px 17px;border-right: 8px solid rgb(198,5,24);}
+.jiaxiao_detail p{margin-top: 10px;}
+.detail_text{text-align: center;margin-top: 20px;}
+
+.detail_text a{background-color:rgb(239,56,99);border-radius: 5px;color: white;padding:3px 2px;}
+.baoming{margin-top: 15px;}
+.baoming input{border-radius: 15px;background-color: rgb(239,56,99);color: white;}
+.pingjia{margin-top: 40px;margin-bottom: 22px;}
+.pingjia_detail{margin-top: 15px;}
+
+
+.pingjia_text{float: right;color: white;font-size: 14px;font-family: "微软雅黑";margin-bottom: 30px;}
+.pingjia_text .name{font-size: 18px;background-color:white;color: black;width: 66px;text-align: center;margin-bottom: 5px;}
+
+.footer{padding-top: 22px;background-color: rgb(172,0,20);color: white;padding-bottom: 20px;margin:0 -100px;}
+.footer_content{max-width:1050px;margin: 0 auto;}

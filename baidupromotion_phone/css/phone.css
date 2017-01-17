@@ -1,0 +1,116 @@
+
+html { height:100%; font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 62.5%; }
+body { margin: 0; font-size: 1.4rem; line-height: 1.5; color: #333333; overflow-x: hidden; -webkit-overflow-scrolling: touch;}
+
+
+
+
+/*首页头部信息*/
+.head{font-family: "微软雅黑";}
+.head_list{font-size: 3.597rem;color: #19bf51;height: 8.9rem;line-height: 8.9rem;border-bottom: 2px solid #dadada ;}
+.pianyi{margin-left: 1.5rem;padding-right: 3.1rem;}
+.kuaijie{padding-left: 3.1rem;padding-right: 3.1rem;border-left: 2px solid #dadada;}
+.kaopu{padding-left:3.1rem;padding-right: 3.1rem;border-left: 2px solid #dadada;}
+.tiexin{padding-left: 3.1rem;border-left: 2px solid #dadada;margin-right: 1rem;}
+
+.head_list img{margin-bottom: 1rem;}
+.headText{font-size: 2.1rem;padding-top: 1.7rem;padding-bottom: 1.3rem;padding-left: 1.5rem;background-color:#dcdddd;border-top: 0.2rem solid #c9caca;margin-top: -1rem;}
+
+
+
+/*首页驾校详情*/
+ul{font-family:"微软雅黑";margin-top: 0.5rem;}
+ul li{padding-bottom: 2.1rem;border-bottom: 1px solid #dadada;padding-top: 3.2rem;}
+ul li .jiaxiao_Pic{margin-left: 2rem;}
+ul li img{float: left;}
+ul li .jiaxiao_level{float: left;padding-left: 1rem;margin-top: -1.5rem;}
+.jiaxiao_level .jiaxiao_Name{font-size: 2.7rem;color: black;}
+.jiaxiao_level .jiaxiao_Local{font-size: 1.8rem;}
+.jiaxiao_level img{margin-top: 0.7rem;}
+
+ul li .price{float: right;margin-right: 2rem;}
+.hongbao,.tuangou{font-size: 2.227rem;background-color:#f9622d;color: white;padding-left: 0.6rem;padding-right: 0.6rem;border-radius: 0.5rem;}
+.hongbao{margin-left: 1.3rem;}
+.price{font-size: 2.6rem;color: black;}
+.price .price_Num{font-size: 4.6rem;color:#f9622d;}
+.last_Li{border:none;padding-bottom: 10rem;}
+
+/*首页底部样式*/
+.foot{border-bottom: 3px solid #dadada;border-top: 3px solid #dadada;clear: both;overflow: hidden;margin-top: -4rem;position: fixed;bottom:0;background-color: white;width: 100%;}
+.foot img{float: left;margin-left: 1.5rem;margin-top: 2rem;margin-bottom: 1.6rem;}
+.telephone{float: right;width: 15.8rem;height: 5.1rem;background-color:#19bf51 ;margin-top: 1.5rem;margin-right: 4.1rem;font-size: 3.597rem;padding-left: 0.8rem;}
+.telephone a{color: white;text-decoration: none;}
+
+/*远方驾校头部*/
+.head1{position: relative;font-family: "微软雅黑";}
+.head1 .back_Button{position: absolute;top:2.6rem;left: 1.9rem;}
+.head1 .jiaxiao_detail_name{font-size: 3rem;margin-top: 2.6rem;margin-left: 3.7rem;font-weight: 800;}
+.head1 .jiaxiao_Local_name{font-size: 2.4rem;}
+.star{clear: both;overflow: hidden;margin-right: 5rem;margin-top: -4rem;}
+.star img{float: right;}
+.describe{font-size: 2rem;padding-top: 3rem;padding-bottom: 2rem;padding-left: 3.4rem;margin-top: 2rem;border-bottom: 4px solid #dadada;border-top: 1px solid #dadada;color: #c9caca;}
+
+/*驾校班型信息*/
+
+.banxing{font-family: "微软雅黑";}
+.banxing .banxing_message{font-size: 3rem;margin-top: 2rem;margin-left:3.6rem;border-left: 5px solid green;line-height: 3rem;padding-left: 0.5rem;font-weight: 900;}
+.banxing ul{border-top: 1px solid #dadada;margin-top: 1.6rem;padding-left: 3.6rem;border-bottom: 2px solid #dadada;}
+.banxing ul .putongban{font-size: 2.6rem;font-weight: 900;color: black;}
+.banxing_detal{font-size: 1.8rem;font-weight: 500;line-height: 1.8rem;color:#727171;}
+.c1{margin-right: 1rem;margin-left: 1rem;font-weight: 900;font-size: 1.8rem;}
+.banxing_price{float: right;font-size: 4rem;margin-top: -6rem;margin-right:3.8rem;}
+.banxing_price p{color:#f9622d;}
+.banxing_price span{font-size: 2.4rem;color: black;}
+.last{border-bottom: none;}
+ul li a:visited{text-decoration: none;}
+ul li a:hover{text-decoration: none;}
+
+/*代金券信息*/
+.money{font-family: "微软雅黑";font-size: 2.71rem;clear: both;overflow: hidden;margin-top: 2.2rem;margin-left: 4.5rem;margin-bottom: 2rem;}
+.money p{background-image: url(../img/money.png);background-position: left;background-repeat: no-repeat;padding-left: 2.5rem;margin-bottom: -1rem;line-height:2.71rem;}
+.money1 p{margin-right: 1rem;}
+.money2 p{padding-right: 1rem;margin-right: 1rem;}
+.money span{font-size:2.03rem ;color: #dadada;margin-left: 3rem;line-height: 2.03rem;}
+.left{float: left;}
+.money1{border-right:2px solid #dadada;height: 5.5rem;margin-right: 1rem;}
+.money2{border-right:3px solid #dadada;height: 5.5rem;margin-right: 1rem;}
+
+/*学员评价*/
+.time{font-size: 2rem;color: #dadada;position: absolute;right: 0;}
+.usephoto{position: absolute;left: -6rem;}
+.coment_li{position: relative;margin-left: 8.7rem;margin-right: 4rem;}
+.coment{font-family: "微软雅黑";}
+.name{font-size: 2.4rem;}
+.coment_detail{clear: both;font-size: 1.8rem;margin-top: 4rem;}
+
+/*报名页面*/
+.sign_head{position: relative;font-family: "微软雅黑"; border-bottom: 1px solid #dadada;  }
+.signback{position: absolute;left: 2rem;top:1.5rem}
+.sign_head h1{font-size: 3.675rem;}
+.back_Button_sign{text-align: center;background-color:#00a63c;height: 8rem;color: white;padding-top: 0.1rem;}
+
+/*报名页面驾校班型信息*/
+.sign_style{width: 41rem;margin: 0 auto;margin-top: 4rem;}
+#sign_style{height: 11.3rem;}
+#jiaixao_name{font-size: 2.46rem;}
+#banxing{font-size: 3.6rem;color: #f9622d;}
+#time{font-size: 2rem;}
+
+/*登录框*/
+.sign_form{font-family: "微软雅黑";}
+.blank{height: 2.7rem;background-color: #dadada;margin-top: -0.98rem;}
+.sign_form h2{margin-left: 4.2rem;background: url(../img/green.jpg) left no-repeat;padding-left: 1rem;font-size: 3rem;font-weight: 600;}
+label{font-size: 3rem;color: #dadada;}
+.sign_form input{height: 5rem;width: 35rem;font-size: 3rem;line-height: 3rem;border: hidden;}
+form{margin-left: 5.5rem;}
+form div{border-bottom: 1px solid #dadada;padding-bottom: 2.7rem;padding-top: 3.5rem;}
+.sign_form button{width: 29.6rem;height: 9.6rem;background-color:#00a63c;font-size: 4.717rem;margin: 6rem 12rem auto;color: white;}
+
+/*报名成功页面*/
+.sign_box{position: relative;}
+.okpage img{border: 1px solid blue;}
+.okpage{position: fixed;top:20%;display:none;}
+.telephone_number{font-size: 5.66rem;color:#00a63c;position: absolute;top:24rem;left: 18rem;}
+.okback{font-size: 4.067rem;color: #dadada;position: absolute;bottom:3rem;left: 30rem;}
+
+

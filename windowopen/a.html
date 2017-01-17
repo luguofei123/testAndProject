@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<a href="b.html" target="_blank">在新窗口打开b.html</a><br><br><br>  
+<div id="div_id" style="border:1px solid #F00; width:300px; height:100px; padding:10px">  
+ <p>请先点击上面的超链接</p>  
+ <p>这里的文字会在你点击<b style="color:#F00">b.html</b>页面中的<b>超链接后</b>改变哦！</p>  
+</div>  
+<script type="text/javascript">  
+ function a(n) {  
+  document.getElementById("div_id").innerHTML = n ;  
+ }  
+</script>  
+	</body>
+</html>

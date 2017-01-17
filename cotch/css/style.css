@@ -1,0 +1,104 @@
+/*login*/
+img{width: 100%;}
+#login-box { margin:60px auto 0; width:610px;height:176px; background:url(../img/login-form.png) no-repeat; }
+input{width:300px;height: 88px ;margin:0px 0 0 200px ;border:none;line-height:88px;font-size: 24px;color:#969696;padding:0;outline: 0;background:transparent}
+button{height: 88px;width:100%;margin:50px auto;font-size: 24px;background:#23a739;color: #FFF;border-radius: 5px;border: none;outline: none;}
+
+/*choose school*/
+.title-bar{height: 88px;background: green;color: white;line-height: 88px;position: relative;font-size: 40px;padding-left: 15px;text-align: center;}
+a{color: white;}
+a:hover{text-decoration: none;color: #CCCCCC;}
+.title-bar .back { position:absolute; left:30px; top:0; height:88px; font-size:26px;}
+
+.choose-box{background:#f3f3f3;text-align: center;font-size: 32px;}
+.choose-box li{padding:10px;border-bottom:1px solid #dfdfdf;}
+.choose-box a{color:#747474}
+.choose-box>li>a.curr { color:#23a739; }
+/*coach details*/
+.coach-img{height: 145px;padding-top: 20px;padding-left: 20px;background: white;margin-top: 10px;}
+.coach-img img{width: 110px;float: left;}
+.coach-name{margin-left: 140px;font-size: 24px;margin-top: 20px;}
+.coach-training{margin-top: 10px;background-color: white;font-size: 26px;padding-top:15px;padding-left: 18px;margin-left: 5px;margin-right: 5px;padding-bottom: 10px;}
+.coach-training ul{border-bottom: 1px solid #CCCCCC;border-top:1px solid #CCCCCC ;}
+.coach-training li{margin: 10px;}
+.coach-box{margin-top: 20px;}
+.footbar{width: 100%;height:88px;position:fixed;left:0;bottom:0;background: url(../img/bottom-bar.png) no-repeat;}
+
+/*search-coach*/
+
+
+.search-coach{display:block;line-height: 25px;width: 500px;height: 55px;margin:10px auto;background-color: white;border: 1px solid #969696;border-radius: 2px;padding-left: 5px;text-align: center;}
+.search-coach:focus{outline:1px solid blue;-moz-outline-radius: 5px;}
+.coach-keshi{height: 220px;margin-left: 5px;margin-right: 5px;border-radius: 5px;}
+.coach-a{color: black;}
+.coach-a:hover{color: black;}
+
+/*exam*/
+.exam-box{width: 100%;text-align: center;font-size: 26px;background-color: white;}
+.exam-box tr {border: 1px solid #C0C0C0;}
+.exam-box .kuang td{border: 1px solid #C0C0C0;}
+.exam-box tr{height: 88px;}
+.exam-box .kuang a{color: black;}
+tr td a{color: black;display:block;padding-top: 12px;}
+tr td p{font-size: 18px;}
+tr td a:hover{color: black;}
+tr td a img{width: 40px;}
+
+/*exam-detail*/
+.exam-detailbox{margin:10px;height: 260px;background: white;border-radius: 5px;padding-top: 15px;padding-left: 15px;}
+.exam-detailbox p{font-size: 24px;padding-left: 32px;}
+.p1{background: url(../img/icon.png) no-repeat ;}
+.p2{background: url(../img/icon.png) no-repeat 0 -102px ;}
+.p3{background: url(../img/icon.png) no-repeat 0 -224px ;}
+.p4{background: url(../img/icon.png) no-repeat 0 -380px ;}
+.p5{background: url(../img/icon.png) no-repeat 0 -565px ;}
+
+/*finance*/
+.finance-data{height: 180px;background: white;font-size: 28px;padding-top: 20px;}
+.finance-data a{color: black;}
+.finance-data a p{background: url(../img/icon.png) no-repeat 0 -220px;float: right;padding-left: 30px;margin-right: 15px;}
+.finance-data>p{text-align: center;margin-top: 50px;}
+.finance-detail{text-align: center;padding-right: 20px;font-size: 28px;background-color: white;padding-bottom: 100px;}
+.finance-detail li{clear: both;margin-left: 10px;padding-top: 30px;;border-top: 1px solid #C0C0C0;}
+
+/*finance-detail1*/
+.finance-date{background: white;height: 200px;padding-top:30px;}
+.finance-date1{width:570px; height:88px;margin:20px auto;}
+.finance-date a{ float:left; width:190px; height:100%; font-size:26px; line-height:88px; color:#757575; text-align:center; border:1px solid #ff902d;}
+.finance-date a:nth-child(1){ border-right:0; border-radius:50px 0 0 50px;}
+.finance-date a:nth-child(3){ border-left:0; border-radius:0px 50px 50px 0px;}
+.finance-date a.curr { color:#fff; background:#ff902d; }
+
+
+.finance-table{margin-top: 20px;}
+.finance-table table{width: 100%;background-color: white;text-align: center;height: 450px;font-size: 23px;color: #333333;}
+.finance-table table th{text-align: center;}
+.finance-table table td{border:none;border-bottom: 1px solid black;}
+
+
+/*index*/
+.index-main{background-image: url(../img/idx-top-bg.jpg);width: 100%;height: 410px;color: white;font-size: 30px;padding-top: 10px;}
+.text-coach{width: 300px;margin:180px auto;}
+.shouru{background: url(../img/idx-icon-money.png) no-repeat left;padding-left: 28px;}
+.biye{background: url(../img/idx-icon-doctor.png) no-repeat left;padding-left: 28px;}
+.index-content img,.index-content1 img{float: left;width: 305px;margin: 5px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

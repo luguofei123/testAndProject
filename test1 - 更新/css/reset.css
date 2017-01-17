@@ -1,0 +1,62 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+
+
+
+
+body{background-image: url(../img/pc端登录页.png);background-repeat: no-repeat;}
+.logonBox{width: 386px;margin: 260px auto;position: relative;}
+.logonBar{background-image: url(../img/pc端登录页_03.png);
+           background-repeat: no-repeat;
+           background-position: top;
+           height: 70px;
+           background-color: black;
+           }
+.logo{padding-left: 15px;padding-top: 21px;}
+.logoText{color: #ddd;font-size: 18.67px;float:right;padding-top: 27px;padding-right: 144px;font-family: "微软雅黑";}
+ul{background-image: url(../img/pc端登录页_01.png);width: 386px;height: 230px;margin-top: 0px;font-family: "宋体";font-size: 13.34px;position: relative; }
+li{padding-left: 63px;}
+.useName{padding-top: 19px;}
+.useInput{margin-top: 6px;margin-bottom: 9px;}
+.passName{margin-bottom: 6px;}
+.indentName{margin-top: 17px}
+.inputStyle{width: 271px;height: 26px;background-image: url(../img/pc端登录页_09.png);
+             border:none;text-indent:26px;line-height: 26px;
+             }
+.useLogo{position: absolute;background-image: url(../img/pc端登录页_12.png);display: block;width: 11px;height: 12px;top:46px;left: 73px;}
+.passLogo{position: absolute;background-image: url(../img/pc端登录页_17.png);display: block;width: 11px;height: 12px;bottom:117px;left: 73px;}
+.indentInput{width:90px;height: 26px;background-image: url(../img/pc端登录页_20.png);border: none;text-indent: 20px;letter-spacing: 6px;line-height: 26px;}
+.indentPic{position: relative;top:12px;right: -2px;}
+.remberPass{margin-top: 28px}
+.btn{position:absolute;top:250px;right: 57px;background-image: url(../img/pc端登录页_26.png);width: 121px;height: 41px;border: none;font-family: "微软雅黑";font-size: 16.67px;font-weight: 200;color: white;}
+.remberText{position: absolute;top:194px;left: 89px;}
+#checkBox{
+    display: none;
+    visibility:hidden;
+}
+
+#checkBox + label {
+    background-image: url(../img/pc端登录页_23.png);
+    background-repeat: no-repeat;
+}
+
+#checkBox:checked+label{
+    background-image: url(../img/pc端登录页_05.gif);
+    background-repeat: no-repeat;
+
+
+}
+

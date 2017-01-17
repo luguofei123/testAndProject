@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=640">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>个人账单app-登录界面</title>
+  
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+	<div class="box">
+		<form action="user.php" method="get">
+			<span>姓名：</span><input type="text" id="" value="" placeholder="请输入用户名"/><span id="name_text"></span>
+        </br>       
+        <span class="count0_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;已经输入了<span id="count0">0</span>个字符</span>
+         </br>
+         </br>
+       <span>密码：</span><input type="password" id="" value="" placeholder="请输入密码"/><span id="password_text"></span>
+        </br>
+        <span class="count1_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;已经输入了<span id=count1>0</span>个字符</span>
+        </br>
+      <input type="submit" name="" id="tijiao1" value="提交" /> 
+			
+		</form>
+		
+	</div>
+       <script>                              	      
+       	window.onload=function(){
+       		var input=document.getElementsByTagName("input");
+       		var name_text=document.getElementById("name_text");
+       		var password_text=document.getElementById("password_text");
+       		var count0=document.getElementById("count0")
+       		var count1=document.getElementById("count1")
+       
+       		
+       		//鼠标移入移除事件
+       		input[0].onmouseover=function(){       			                
+       			this.focus(); 
+       			if(count0.innerHTML==0){name_text.innerHTML="您输入4-12个字符"}
+       			else if(count0.innerHTML<4){name_text.innerHTML="您输入的字符少于4个字符"
+       				
+       		}
+       			else if(count0.innerHTML>12){name_text.innerHTML="您输入的字符大于12个字符"
+       				
+       			}
+       			else{name_text.innerHTML="OK";
+       			   
+       				
+       			}
+       			       	}
+       		
+       		//鼠标点击事件
+       		input[0].onclick=function(){
+       		
+       		
+       		}
+       		//键盘输入事件
+       		input[0].onkeyup=function(){
+       			var number0_length=input[0].value.length;
+       			//count0=document.getElementById("count0");
+       			count0.innerHTML=number0_length;
+       		
+       		}
+       		//鼠标移出事件
+       		input[0].onmouseout=function(){
+       			if(count0.innerHTML<4){name_text.innerHTML="您输入的字符少于4个字符"
+       				
+       		}
+       			else if(count0.innerHTML>12){name_text.innerHTML="您输入的字符大于12个字符"
+       				
+       			}
+       			else{name_text.innerHTML="OK";
+       			   
+       				
+       			}
+       		}
+       		
+       		
+       		//密码输入框事件
+       		input[1].onmouseover=function(){       			                
+       			this.focus(); 
+       			if(count1.innerHTML==0){password_text.innerHTML="您输入4-12个字符"}
+       			else if(count1.innerHTML<4){password_text.innerHTML="您输入的字符少于4个字符"
+       				
+       		}
+       			else if(count1.innerHTML>12){password_text.innerHTML="您输入的字符大于12个字符"
+       				
+       			}
+       			else{password_text.innerHTML="OK";
+       			   
+       				
+       			}
+       			       	}
+       		
+       		//鼠标点击事件
+       		input[1].onclick=function(){
+       		
+       		
+       		}
+       		//键盘输入事件
+       		input[1].onkeyup=function(){
+       			var number1_length=input[1].value.length;
+       			count1=document.getElementById("count1");
+       			count1.innerHTML=number1_length;
+       		
+       		}
+       		//鼠标移出事件
+       		input[1].onmouseout=function(){
+       			if(count1.innerHTML<4){password_text.innerHTML="您输入的字符少于4个字符"
+       				
+       		}
+       			else if(count1.innerHTML>12){password_text.innerHTML="您输入的字符大于12个字符"
+       				
+       			}
+       			else{password_text.innerHTML="OK";
+       			   
+       				
+       			}
+       		}
+       		
+       		
+       	}
+     	
+       </script>
+      
+</body>
+</html>
